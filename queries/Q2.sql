@@ -1,6 +1,5 @@
 
-SELECT zipcode, COUNT(tree_id) AS total_trees
+SELECT tree_id, species, health, the_geom
 FROM trees
-GROUP BY zipcode
-ORDER BY total_trees DESC
-LIMIT 10;
+WHERE ST_DWithin(ST_SetSRID(ST_MakePoint(-73.96253174434912,40.80737875669467),4326), the_geom, 804.672)
+LIMIT 10
