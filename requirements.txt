@@ -1,1 +1,11 @@
-# Add your third-party Python libraries here
+# Third-party Python libraries used:
+
+geoalchemy2
+geopandas
+matplotlib
+pandas
+requests
+shapely
+sqlalchemy
+numpy
+psycopg2
