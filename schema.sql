@@ -19,7 +19,8 @@
         zipcode VARCHAR,
         the_geom GEOMETRY,
         health VARCHAR,
-        species VARCHAR
+        species VARCHAR,
+        status VARCHAR
     )
     
 CREATE TABLE IF NOT EXISTS rent (
